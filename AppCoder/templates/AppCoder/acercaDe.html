@@ -1,0 +1,28 @@
+{% extends "AppCoder/inicio.html" %}
+
+{% load static %}
+
+{% block title_head %}
+    <title>Acerca de Mi</title>
+{% endblock title_head %}
+
+{% block herencia %}
+    <h1 class="card text-center mt-3">Acerca de mi</h1>
+
+    <div class="d-flex flex-column align-items-center">
+        <img src="{% static 'AppCoder/assets/img/my-pic.png' %}" alt="imagen perfil" class="rounded-circle img-thumbnail" width="250" height="250">
+        
+        <div class="card text-center mt-3">
+            <div class="card-body">
+                <p class="card-text fs-5">
+                    Soy Alexander Salomón, tengo 38 años.
+                    Me gusta tocar la guitarra, soy amante de los videojuegos y hincha de Vélez Sársfield.
+                    Fui peluquero profesional desde los 18 años hasta la pandemia, cuando tenía 35 años. 
+                    En la pandemia comencé a meterme en el mundo de la programación como un hobbie, 
+                    hoy ya llevo hecho 4 cursos en Coderhouse [Desarrollo web, Javascript, React js y Python].
+                    Me apasiona la programación y cada día trato de aprender algo nuevo ya que es algo que me gusta mucho.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

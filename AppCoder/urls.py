@@ -19,7 +19,8 @@ urlpatterns = [
     path('leerPersona',views.leerPersona,name='leerPersona'), 
     path('eliminarPersona/<persona_nombre>/',views.eliminarPersona,name='eliminarPersona'),
     path('editarPersona/<persona_nombre>/',views.editarPersona,name='editarPersona'),
-
+    #--------------Acera de Mi-----------------------
+    path('acercaDe', views.acerca_de, name='acerca_de'),
     #--------------Vetirinario-----------------------
     path('veterinario',views.veterinario,name='veterinario'),
     path('formularioVeterinario',views.formularioVeterinario,name='formularioVeterinario'),

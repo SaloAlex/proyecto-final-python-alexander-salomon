@@ -169,6 +169,9 @@ def eliminarPersona(request,persona_nombre):
     personas = Persona.objects.all()
     contexto ={"personas":personas}
     return render(request,"AppCoder/persona.html",contexto)
+#-----------------------------------------Acerca De Mi-------------------------------------------------------
+def acerca_de(request):
+    return render(request, 'AppCoder/acercaDe.html')
 
 #-----------------------------------------Veterinario-------------------------------------------------------
 def veterinario(request):
